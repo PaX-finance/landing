@@ -4,8 +4,8 @@ const isProd = process.env.NEXT_PUBLIC_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? '/nextjs-github-pages' : '',
-  assetPrefix: isProd ? '/nextjs-github-pages/' : '',
+  basePath: isProd ? '/landing' : '',
+  assetPrefix: isProd ? '/landing/' : '',
   images: {
     unoptimized: true,
   },
