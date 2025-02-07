@@ -10,7 +10,8 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Rooter - get more, pay less, sell smarter",
-  description: "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
+  description:
+    "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
   applicationName: "Rooter",
   referrer: "origin-when-cross-origin",
   creator: "OxMarco",
@@ -37,14 +38,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rooter",
-    description: "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
+    description:
+      "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
     siteId: "1467726470533754880",
     creator: "@RooterPay",
     images: ["https://nextjs.org/og.png"],
   },
   openGraph: {
     title: "Rooter",
-    description: "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
+    description:
+      "A smart payment terminal that cuts costs and boosts loyalty with every transaction",
     url: "https://rooterpay.com",
     siteName: "Rooter",
     images: [
@@ -59,19 +62,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html>
       <head>
         <title>Rooter</title>
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
       </head>
-    <body
-      className={`${spaceGrotesk.className} antialiased scroll-smooth m-0 p-0 motion-reduce:transform-none bg-[#fdf3ec]`}
-    >
-      <WebVitals />
-      { children }
-    </body>
+      <body
+        className={`${spaceGrotesk.className} antialiased scroll-smooth m-0 p-0 motion-reduce:transform-none bg-[#fdf3ec]`}
+      >
+        <WebVitals />
+        {children}
+      </body>
     </html>
   );
 }

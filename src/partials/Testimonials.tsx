@@ -1,6 +1,9 @@
 export const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-b from-[#FFF7F4] to-[#F8FAFF]">
+    <section
+      id="testimonials"
+      className="py-24 bg-gradient-to-b from-[#FFF7F4] to-[#F8FAFF]"
+    >
       <div className="px-4">
         <h2 className="mb-16 text-center text-4xl font-medium md:text-5xl lg:text-6xl">
           Loved by <span className="text-[#F26B3A]">clients</span>

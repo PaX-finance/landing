@@ -11,7 +11,8 @@ export const CTA = () => {
           sales
         </div>
         <h2 className="text-3xl md:text-4xl font-normal mt-6 md:mt-8 mb-12 max-w-4xl mx-auto">
-          We analyse your customers spending patterns and your inventory using AI to derive actionable insights and boost sales
+          We analyse your customers spending patterns and your inventory using
+          AI to derive actionable insights and boost sales
         </h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">

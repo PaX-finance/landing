@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Check, X } from "lucide-react";
 import {
   Table,
@@ -23,38 +24,51 @@ export const Competitors = () => {
                 <TableHead className="w-1/5 bg-white"></TableHead>
                 <TableHead className="w-1/5 bg-[#F8FBFF] text-center">
                   <div className="flex flex-col items-center space-y-2">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/SumUp_logo_ModernInk_RGB-FullLogo_web_400width.png/1200px-SumUp_logo_ModernInk_RGB-FullLogo_web_400width.png"
-                      alt="SumUp"
-                      className="h-8 object-contain"
-                    />
+                    {/* Container with fixed dimensions */}
+                    <div className="relative w-20 h-8">
+                      <Image
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/SumUp_logo_ModernInk_RGB-FullLogo_web_400width.png/1200px-SumUp_logo_ModernInk_RGB-FullLogo_web_400width.png"
+                        alt="SumUp"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </TableHead>
                 <TableHead className="w-1/5 text-center">
                   <div className="flex flex-col items-center space-y-2">
-                    <img
-                      src="https://privatepracticesoftware.co.uk/wp-content/uploads/2022/11/image.png"
-                      alt="Dojo"
-                      className="h-8 object-contain"
-                    />
+                    <div className="relative w-20 h-8">
+                      <Image
+                        src="https://privatepracticesoftware.co.uk/wp-content/uploads/2022/11/image.png"
+                        alt="Dojo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </TableHead>
                 <TableHead className="w-1/5 text-center">
                   <div className="flex flex-col items-center space-y-2">
-                    <img
-                      src="https://cdn.cookielaw.org/logos/aa498dad-1691-4c3b-894a-906c990be323/eab8b6ff-57d6-438a-a7e5-c58dd370ce73/000d8b20-8c3d-4f4f-a0da-5b515f8f20d2/Square_combinationmark_black.png"
-                      alt="Square"
-                      className="h-8 object-contain"
-                    />
+                    <div className="relative w-20 h-8">
+                      <Image
+                        src="https://cdn.cookielaw.org/logos/aa498dad-1691-4c3b-894a-906c990be323/eab8b6ff-57d6-438a-a7e5-c58dd370ce73/000d8b20-8c3d-4f4f-a0da-5b515f8f20d2/Square_combinationmark_black.png"
+                        alt="Square"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </TableHead>
                 <TableHead className="w-1/5 text-center">
                   <div className="flex flex-col items-center space-y-2">
-                    <img
-                      src="https://rizzofarrugia.com/wp-content/uploads/bov-logo.png"
-                      alt="Bank of Valletta"
-                      className="h-8 object-contain"
-                    />
+                    <div className="relative w-20 h-8">
+                      <Image
+                        src="https://rizzofarrugia.com/wp-content/uploads/bov-logo.png"
+                        alt="Bank of Valletta"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </TableHead>
               </TableRow>

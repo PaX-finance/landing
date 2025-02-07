@@ -8,8 +8,7 @@ const stoke = Stoke({
 export const Logo = () => {
   return (
     <span className={`${stoke.className}`}>
-      R
-      <span className="relative inline-block">o</span>
+      R<span className="relative inline-block">o</span>
       <span className="relative -ml-[11%] inline-block">o</span>
       ter
     </span>

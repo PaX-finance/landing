@@ -44,7 +44,8 @@ export const Footer = () => {
                 </p>
               </div>
               <p className="mt-6 text-[15px] leading-relaxed">
-              A smart payment terminal that cuts costs and boosts loyalty with every transaction.
+                A smart payment terminal that cuts costs and boosts loyalty with
+                every transaction.
               </p>
               <ul className="flex gap-4 mt-8">
                 {[FaTwitter, FaLinkedin, FaGithub].map((Icon, idx) => (
