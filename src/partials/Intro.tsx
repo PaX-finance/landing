@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export const Intro = () => {
@@ -23,15 +24,19 @@ export const Intro = () => {
           transaction
         </p>
         <div className='flex flex-row gap-4'>
-          <Button className='border-2 border-[#F26B3A] bg-[#F26B3A] text-white text-md font-semibold px-6 py-6 rounded-xl shadow-lg hover:bg-[#E25B2A] transition-all transform hover:scale-105 duration-300'>
-            Start Now
-          </Button>
-          <Button
-            variant='outline'
-            className='border-2 border-[#F26B3A] text-[#F26B3A] text-md font-semibold px-6 py-6 rounded-xl shadow-lg hover:bg-[#F26B3A] hover:text-white transition-all transform hover:scale-105 duration-300'
-          >
-            Book a Demo
-          </Button>
+          <Link href='https://form.typeform.com/to/g6Rbuxae'>
+            <Button className='border-2 border-[#F26B3A] bg-[#F26B3A] text-white text-md font-semibold px-6 py-6 rounded-xl shadow-lg hover:bg-[#E25B2A] transition-all transform hover:scale-105 duration-300'>
+              Start Now
+            </Button>
+          </Link>
+          <Link href='https://form.typeform.com/to/g6Rbuxae'>
+            <Button
+              variant='outline'
+              className='border-2 border-[#F26B3A] text-[#F26B3A] text-md font-semibold px-6 py-6 rounded-xl shadow-lg hover:bg-[#F26B3A] hover:text-white transition-all transform hover:scale-105 duration-300'
+            >
+              Book a Demo
+            </Button>
+          </Link>
         </div>
       </div>
 

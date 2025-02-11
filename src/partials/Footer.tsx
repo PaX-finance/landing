@@ -30,6 +30,12 @@ const sections = [
   },
 ];
 
+const socials = [
+  { name: 'Twitter/X', href: 'http://x.com/RooterPay', Icon: FaTwitter },
+  { name: 'LinkedIn', href: '', Icon: FaLinkedin },
+  { name: 'GitHub', href: '', Icon: FaGithub },
+];
+
 export const Footer = () => {
   return (
     <section className='py-24 text-white bg-[#222222]'>
@@ -48,13 +54,14 @@ export const Footer = () => {
                 every transaction.
               </p>
               <ul className='flex gap-4 mt-8'>
-                {[FaTwitter, FaLinkedin, FaGithub].map((Icon, idx) => (
+                {socials.map((social, idx) => (
                   <li key={idx}>
                     <a
-                      href='#'
+                      title={social.name}
+                      href={social.href}
                       className='hover:text-[#F26B3A] transition-colors'
                     >
-                      <Icon className='w-5 h-5' />
+                      <social.Icon className='w-5 h-5' />
                     </a>
                   </li>
                 ))}

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export const CTA = () => {
   return (
@@ -16,19 +17,23 @@ export const CTA = () => {
         </h2>
 
         <div className='flex flex-col md:flex-row items-center justify-center gap-4'>
-          <Button
-            size='lg'
-            className='bg-[#F26B3A] hover:bg-[#E25B2A] text-lg px-8 py-6'
-          >
-            Start Now
-          </Button>
-          <Button
-            size='lg'
-            variant='outline'
-            className='border-[#F26B3A] text-[#F26B3A] hover:bg-[#F26B3A] hover:text-white text-lg px-8 py-6'
-          >
-            Book a Demo
-          </Button>
+          <Link href='https://form.typeform.com/to/g6Rbuxae'>
+            <Button
+              size='lg'
+              className='bg-[#F26B3A] hover:bg-[#E25B2A] text-lg px-8 py-6'
+            >
+              Start Now
+            </Button>
+          </Link>
+          <Link href='https://form.typeform.com/to/g6Rbuxae'>
+            <Button
+              size='lg'
+              variant='outline'
+              className='border-[#F26B3A] text-[#F26B3A] hover:bg-[#F26B3A] hover:text-white text-lg px-8 py-6'
+            >
+              Book a Demo
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
